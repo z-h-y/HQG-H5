@@ -1,0 +1,225 @@
+<!doctype html>
+<!-- <html manifest="manifest.appcache"> -->
+<html >
+<head>
+
+    <!-- <meta http-equiv="refresh" content="15"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Eric" /> 
+    <meta content="telephone=no" name="format-detection" /> 
+    <meta content="email=no" name="format-detection" />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+
+
+<!--     <link href="//cdn.bootcss.com/animate.css/3.4.0/animate.min.css" rel="stylesheet">  -->
+<!--     <link href="//cdn.bootcss.com/Swiper/3.1.2/css/swiper.min.css" rel="stylesheet"> -->
+    <!-- <link href="//cdn.bootcss.com/animate.css/3.4.0/animate.min.css" rel="stylesheet"> -->
+    <link href="css/style.css?v=3" rel="stylesheet" type="text/css" />
+
+
+
+<script>
+
+
+
+
+    
+
+
+
+
+ //插入viewport
+ function viewportMeta() {
+     var e = parseInt(window.screen.width),
+         t = e / 640,
+         i = navigator.userAgent;
+         // alert (navigator.userAgent)    
+     if (/Android (\d+\.\d+)/.test(i)) {
+         var a = parseFloat(RegExp.$1);
+         document.write(a > 2.3 ? '<meta name="viewport" content="width=640, minimum-scale = ' + t + ", maximum-scale = " + t + ', target-densitydpi=device-dpi">' : '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">')
+     } else document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">')
+ }
+
+ viewportMeta();
+
+var sUserAgent = navigator.userAgent.toLowerCase();
+var bIsAndroid = sUserAgent.match(/android/i) == "android";
+if(bIsAndroid){
+  function addCssByLink(url){  
+    var doc=document;  
+    var link=doc.createElement("link");  
+    link.setAttribute("rel", "stylesheet");  
+    link.setAttribute("type", "text/css");  
+    link.setAttribute("href", url);  
+  
+    var heads = doc.getElementsByTagName("head");  
+    if(heads.length)  
+        heads[0].appendChild(link);  
+    else  
+        doc.documentElement.appendChild(link); 
+   } 
+   addCssByLink('css/android.css');
+}
+
+
+
+</script>
+<!-- <script type="text/javascript" src="http://h5.static.myappgame.com/common/resource_loader.js"></script> -->
+
+<title>花千骨</title>
+</head>
+<!--     <img src='images/gif.gif'> -->
+<body>
+
+  
+
+<div id='html-content'>
+    <div class="view" >
+        <!-- LOADING页面 -->
+        <div id="preload" class='page show'>
+            <div class="yun"></div>    
+           <div id='preload-img'> </div>
+           <div id='preload-bar'><div></div> </div>
+           <div id='preload-progress'>loading...</div>
+           <div id='startAnimation'>
+               <canvas id='cas' width='400' height='430'></canvas>  
+           </div>
+        </div>
+        <div id='home' class='page unLoad'>
+            <div class="yun"></div>
+            <div class="per per-bzh"></div>
+            <div class="per per-hqg"></div>
+            <p class="dialog dialog-bzh">如果可以重来，我宁可不要爱上你！</p>
+            <p class="dialog dialog-hqg">师傅，再打我一次！</p>
+            <a href="javascript:void(0);" class="home-btn">化身花千骨</a>
+        </div>
+        <div id='xz' class='page unLoad'>
+            <div class="yun"></div>
+            <div class="per per-1"></div>
+            <div class="per per-2"></div>
+            <p class="dialog dialog-bzh">千骨，你知道师父为什么要打你吗？</p>
+            <p class="dialog dialog-hqg">为什么？</p>
+            <div class="xz">
+                <ul>
+                    <li><span class="xz-1"></span></li>
+                    <li><span class="xz-2"></span></li>
+                    <li><span class="xz-3"></span></a></li>
+                    <li><span class="xz-4"></span></li>
+                </ul>
+                <div class="jz-hd"></div>                
+            </div>
+        </div>
+        <div id="xz-jg" class='page unLoad'>
+            <div class="yun"></div>
+            <div class="xz-jg xz-jg-1">
+                <div class="hua-2"></div>
+                <div class="per per-jg-1"></div>
+                <div class="per per-jg-2"></div>
+                <p class="dialog dialog-bzh">呵呵.....</p>
+                <p class="dialog dialog-hqg">神器在手，天下我有！师父你能奈我何？</p>
+            </div>
+            <div class="xz-jg xz-jg-2">
+                <div class="hua-1"></div>
+                <div class="per per-jg-1"></div>
+                <div class="per per-jg-2"></div>
+                <p class="dialog dialog-bzh">呵呵.....</p>
+                <p class="dialog dialog-hqg">你以为你长得帅我就爱上你了么？</p>
+            </div>
+            <div class="xz-jg xz-jg-3">
+                <div class="hua-1"></div>
+                <div class="per per-jg-1"></div>
+                <div class="per per-jg-2"></div>
+                <p class="dialog dialog-bzh">呵呵.....</p>
+                <p class="dialog dialog-hqg">跟着我，让你吃香的喝辣的！</p>
+            </div>
+            <div class="xz-jg xz-jg-4">
+                <div class="hua-1"></div>
+                <div class="per per-jg-1"></div>
+                <div class="per per-jg-2"></div>
+                <p class="dialog dialog-bzh">呵呵.....</p>
+                <p class="dialog dialog-hqg">师父你今天不够嗨啊，来跟着我的节奏摇起来！</p>
+            </div>
+        </div>
+        <div id="xz2" class='page unLoad xz2'>
+            <div class="yun"></div>
+            <div class="per"></div>
+            <p class="dialog dialog-bzh">让你见识下什么是真正的技术！</p>
+            <div class="xz">
+                <ul>
+                    <li><img src="images/xw.jpg" alt=""><span>血吻</span></li>
+                    <li><img src="images/qw.jpg" alt=""><span>强吻</span></li>
+                    <li><img src="images/pd.jpg" alt=""><span>扑倒</span></li>
+                    <li><img src="images/ms.jpg" alt=""><span>秘术</span></li>
+                </ul> 
+                <div class="jz-hd"></div>                
+            </div>
+        </div>
+        <div id="xz2-jg" class='page unLoad'>
+            <div class="yun"></div>
+            <div class="xz-jg xz2-xw">
+                <div class="per"></div>
+                <p class="dialog dialog-bzh">听说你的血可治百病，长生不老，受死吧 </p>
+                <p class="dialog dialog-hqg">目瞪口呆...</p>
+            </div>
+            <div class="xz-jg xz2-qw">
+                <div class="hua"></div>
+                <div class="per qw-per-1"></div>
+                <p class="dialog">这样亲，再这样亲，换个角度亲 </p>
+            </div>
+            <div class="xz-jg xz2-pd">
+                <div class="per"></div>
+                <p class="dialog">找个人扑倒你，然后我仔细欣赏你被扑倒的样子 </p>
+            </div>
+            <div class="xz-jg xz2-ms">
+                <div class="per"></div>
+                <div class="ms-play">
+                    <span class="ms-radius-out"></span>
+                    <span class="ms-radius-in"></span>
+                    <span class="hand"></span>
+                    <p>长按白子画，播放音乐</p>
+                </div>
+            </div>
+            <div class="xz2-btn">
+                <a href="javascript:void(0);" class="xz2-btn-1">师父我跪了</a>
+                <a href="javascript:void(0);" class="xz2-btn-2">我不服！</a>
+            </div>
+        </div>
+        <div id='lb' class='page unLoad'>
+            <div class="yun"></div>
+            <div class="lb-text">
+                <p class="lb-text-1">此生，我心系长留，心系仙界，心系众生</p>
+                <p class="lb-text-2">可是，却从未为你做过什么</p>
+                <p class="lb-text-3">我不负长留，不负六界，不负天地</p>
+                <p class="lb-text-4">可是终归还是负了你，负了我自己...</p>
+            </div>
+            <div class="jz">
+                <div class="jz-content">
+                    <p>亲爱的玩家请前往公众号“<strong>游任有娱</strong>” 回复“<strong>花千骨iOS</strong>或“<strong>花千骨安卓</strong>”即可领取此次师徒情深大礼包！ </p> 
+                    <p>礼包内容：</p>
+                    <span class="lb-jp"></span>
+                    <a href="" class="gzh-btn"><span>前往公众号领取</span></a>
+                    <a href="" class="down-btn"><span>下载游戏</span></a>
+                </div>
+                <div class="jz-hd"></div> 
+            </div>
+        </div>
+    </div><!-- view -->    
+    <audio id='music2' src='music/m.mp3'></audio>
+    <div id="musicPlayer" class=""></div> 
+</div>    
+    
+<!--     <div class="arr"></div> -->
+
+</body>
+<script type="text/javascript" src="http://h5.static.myappgame.com/common/resource_loader.js"></script>
+<script type="text/javascript" src="http://h5.static.myappgame.com/common/bgmusic.js"></script>
+<script src="http://h5.static.myappgame.com/common/preloadjs-NEXT.min.js" type="text/javascript"></script>
+<script src="http://h5.static.myappgame.com/common/touch_for_jquery.js"></script> 
+<script src="js/main.js?v=4"></script>
+
+
+</html>
+
