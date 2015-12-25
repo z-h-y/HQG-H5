@@ -144,7 +144,7 @@ a{ text-decoration: none;}
 .xz2-ms {background: url(../images/ms-bg.jpg) 0 0;}
 .xz2-ms .per {background: url(../images/ms-per.png) 0 0; width: 378px;height: 586px;margin-left: -189px;margin-top: -333px;}
 .xz2-btn {position: absolute; bottom: 100px;background: url(../images/xz2-btn.png) 0 0;width: 498px; height: 88px;left: 50%;margin-left: -249px;}
-.xz2-btn a { display: block; width: 220px; height: 100%; float: left;line-height: 88px;color: #FFF;}
+.xz2-btn span { display: block; width: 220px; height: 100%; float: left;line-height: 88px;color: #FFF;}
 .xz2-btn .xz2-btn-2 { margin-left: 57px;}
 .xz2-xw .dialog-bzh {margin-left: -280px;top: 120px;width: 250px;}
 .xz2-xw .dialog:before {width: 0;height: 0;}
