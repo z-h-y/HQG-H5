@@ -155,7 +155,7 @@ $(document).ready(function() {
   });
 
   //播放按钮 
-  $('.xz2-ms .per, .ms-play').tap(function() {
+  $('.xz2-ms .per, .ms-play').on('touchstart',function() {
     bgm.pause();
     $('#music2').get(0).play();
   });
@@ -217,7 +217,7 @@ $(document).ready(function() {
         },3500);
       }
   })
-  $('.xz2-btn-1').tap(function(){
+  $('.xz2-btn-1').one('touchstart',function(){
       $('#xz2-jg').removeClass('show');
       setTimeout(function(){
           $('#lb').removeClass('unLoad').addClass('show');
@@ -225,7 +225,7 @@ $(document).ready(function() {
       $('#music2').get(0).pause();
       bgm.play();   
   })
-  $('.xz2-btn-2').tap(function(){
+  $('.xz2-btn-2').one('touchstart',function(){
       $('#xz2-jg').removeClass('show');
       setTimeout(function(){
           $('#xz2').removeClass('unLoad').addClass('show');
