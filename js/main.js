@@ -65,7 +65,23 @@ var manifest = [
         {src: 'images/bzh.png'},
         {src: 'images/hqg.png'},
         {src: 'images/home-bzh.png'},
+<<<<<<< HEAD
         {src: 'images/home-hqg.png'}
+=======
+        {src: 'images/home-hqg.png'},
+        {src: 'images/xw-per.png'},
+        {src: 'images/qw-per-1.png'},
+        {src: 'images/pd-per.png'},
+        {src: 'images/ms-per.png'},
+        {src: 'images/xz2-per.png'},
+        {src: 'images/xz-jg-bzh-1.png'},
+        {src: 'images/xz-jg-bzh-2.png'},
+        {src: 'images/xz-jg-bzh-3.png'},
+        {src: 'images/xz-jg-bzh-4.png'},
+        {src: 'images/xz-jg-hqg-1.png'},
+        {src: 'images/xz-jg-hqg-2.png'},
+        {src: 'images/xz-jg-hqg-4.png'}
+>>>>>>> b175f7bc46dfc4fbc6f0bf9788069a38253d507f
 ]
 
 
@@ -212,16 +228,24 @@ $(document).ready(function() {
       },500);
       $('#music2').get(0).pause();
       bgm.play();   
+<<<<<<< HEAD
       console.log(123);
   })
   $('.xz2-btn-2').on('touchstart',function(){
+=======
+  })
+  $('.xz2-btn-2').one('touchstart',function(){
+>>>>>>> b175f7bc46dfc4fbc6f0bf9788069a38253d507f
       $('#xz2-jg').removeClass('show');
       setTimeout(function(){
           $('#xz2').removeClass('unLoad').addClass('show');
       },500);   
       $('#music2').get(0).pause();
       bgm.play();
+<<<<<<< HEAD
       console.log(456);
+=======
+>>>>>>> b175f7bc46dfc4fbc6f0bf9788069a38253d507f
   })
 
    $('.shareBtn').tap(function(){
@@ -232,4 +256,8 @@ $(document).ready(function() {
         history.go(0);
    });
 
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> b175f7bc46dfc4fbc6f0bf9788069a38253d507f

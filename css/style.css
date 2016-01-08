@@ -178,4 +178,8 @@ a{ text-decoration: none;}
  @keyframes yun{
       0% {transform:translate(0,0px);}
       100% { transform:translate(-2250px,0); }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b175f7bc46dfc4fbc6f0bf9788069a38253d507f
